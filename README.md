@@ -139,6 +139,10 @@ Mongo Service
 ```
 kubectl apply -f mongo-service.yaml
 ```
+To set mongo-0 as primary and mongo-1&2 as secondary and open the mongo-0 shell
+```
+kubectl exec -it mongo-0 -- mongo
+```
 
 Create a temporary network utils pod. Enter into a bash session within it. In the terminal run the following command:
 ```
