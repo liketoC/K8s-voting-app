@@ -112,6 +112,9 @@ Clone the github repo
 ```
 git clone https://github.com/N4si/K8s-voting-app.git
 ```
+If it says command not found run:
+
+sudo yum install git -y
 
 **Create CloudChamp Namespace**
 ```
