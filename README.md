@@ -139,7 +139,7 @@ Mongo Service
 ```
 kubectl apply -f mongo-service.yaml
 ```
-To set mongo-0 as primary and mongo-1&2 as secondary and open the mongo-0 shell
+To open the mongo-0 shell inorder to set it as primary pod
 ```
 kubectl exec -it mongo-0 -- mongo
 ```
