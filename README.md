@@ -130,6 +130,10 @@ To create Mongo statefulset with Persistent volumes, run the command in manifest
 ```
 kubectl apply -f mongo-statefulset.yaml
 ```
+To check for pods in watch mode
+```
+kubectl get pods -n cloudchamp -w
+```
 
 Mongo Service
 ```
