@@ -220,6 +220,11 @@ kubectl expose deploy api \
  --target-port=8080
 ```
 
+Once exposed to check for the IP
+```
+kubectl get svc
+```
+
 Next set the environment variable:
 
 ```
@@ -231,7 +236,12 @@ echo
 }
 ```
 
-Test and confirm that the API route URL /languages, and /languages/{name} endpoints can be called successfully. In the terminal run any of the following commands:
+Test and confirm that the API route URL /languages, and /languages/{name} endpoints can be called successfully.
+i.e. eg: http://a9cb042c4c039440dXXXXXXXXX.us-west-2.elb.amazonaws.com/ok
+or /languages
+or /languages/python
+
+In the terminal run any of the following commands:
 ```
 curl -s $API_ELB_PUBLIC_FQDN/languages | jq .
 curl -s $API_ELB_PUBLIC_FQDN/languages/go | jq .
